@@ -1,0 +1,75 @@
+/* Author: James Carl Bernabe
+Activity Title: AX002 – Horoscope
+Date Completed: January 12, 2024 */
+
+form {
+
+    width: 100%;
+    height: 750px;
+    min-height: 100%;
+    
+    display: flex;
+    
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+    
+    flex: 1;
+    
+    padding-left:50px;
+    padding-right:50px;
+    box-sizing:border-box;
+    background-image: url('../assets/space.jpg');
+    background-size: cover;
+    color: wheat;
+    }img{
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }.inputs{
+        width: 600px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }.horoscope{
+        
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }input{
+        border-radius: 20px;
+        height: 30px;
+        width: 200px;
+        text-align: center;
+        padding: 0 10px;
+        outline: none;
+        font-size: 15px;
+        border: none;
+        background-color: lightgray;
+    }button{
+        border-radius: 20px;
+        height: 40px;
+        width: 100px;
+        outline: none;
+        border: none;
+        background-color: lightgray;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all .15s ease-in-out;
+        margin-bottom: 10px;
+    }button:hover{
+        background-color: beige ;
+    } button:active{
+        opacity: .7;
+    }h1{
+        font-size: 60px
+    }.fname{
+        margin-left: 15px;
+    }h4{
+        margin: 5px;
+    }

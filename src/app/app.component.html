@@ -1,0 +1,35 @@
+<!-- Author: James Carl Bernabe
+Activity Title: AX002 – Horoscope
+Date Completed: January 12, 2024 -->
+
+<form>
+
+  <h1>H O R O S C O P E</h1>
+  <div class="inputs">
+    <div>
+  <label for="fullname">Full Name:  <input class="fname" type="text" #nameInput id="fullname" name="fullname" placeholder="Enter Full Name" required><br><br></label>
+  
+ 
+  
+  <label for="dob">Date of Birth: <input #dateInput type="date" id="dob" name="dob" required></label>
+  
+  
+</div><br>
+  <button (click)="getName(nameInput.value,dateInput.value);">Submit</button>
+
+  <div class="horoscope">
+  
+  <h4>{{ name }}</h4>
+  
+  <h4>{{ dob }}</h4>
+  <h2>{{ sign }}</h2>
+  <img src="assets/{{image}}" width="200px">
+  <p>{{ description }}</p>
+  
+ 
+  
+ 
+  
+  </div>
+</div>
+</form>
